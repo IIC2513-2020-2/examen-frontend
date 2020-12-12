@@ -9,6 +9,7 @@ Este proyecto fue construido con la herramienta [Create React App](https://creat
 ## Setup proyecto
 
 * Clonar repositorio
+* `cd examen-frontend-rehearsal`
 * (Opcional) Si usan `nvm`, cambiar a versión válida para el proyecto
   * `nvm use`
 * Instalar dependencias:
@@ -21,7 +22,7 @@ PORT=3001 yarn start
 ```
 Este comando corre la aplicación en modo development (suficiente para el examen). La gracia de este modo es que al hacer cambios en el código (por ejemplo, dentro de `src/App.js`), la página abierta en el browser debiese refrescarse automáticamente. Siéntete libre de probar haciendo algún cambio para ver este comportamiento.
 
-## Probar endpoint
+## Probar aplicación
 
 Para verificar que todo está bien deben abrir [http://localhost:3001](http://localhost:3001) para ver el resultado en el browser. Debiesen ver un layout con sólo un header que incluye:
 - Título "Examen IIC2513 2020-2" a la izquierda
