@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Ensayo examen frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue construido con la herramienta [Create React App](https://create-react-app.dev/), para crear single-page applications con React. Constituye una aplicación frontend de prueba para el examen.
 
-## Available Scripts
+## Pre-requisitos para correr proyecto:
+* Node.js LTS (ojalá 12.x, pero también puede ser 10.x)
+* [Yarn](https://yarnpkg.com)
 
-In the project directory, you can run:
+## Setup proyecto
 
-### `yarn start`
+* Clonar repositorio
+* (Opcional) Si usan `nvm`, cambiar a versión válida para el proyecto
+  * `nvm use`
+* Instalar dependencias:
+  * `yarn install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Ejecutar aplicación
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+PORT=3001 yarn start
+```
+Este comando corre la aplicación en modo development (suficiente para el examen). La gracia de este modo es que al hacer cambios en el código (por ejemplo, dentro de `src/App.js`), la página abierta en el browser debiese refrescarse automáticamente. Siéntete libre de probar haciendo algún cambio para ver este comportamiento.
 
-### `yarn test`
+## Probar endpoint
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para verificar que todo está bien deben abrir [http://localhost:3001](http://localhost:3001) para ver el resultado en el browser. Debiesen ver un layout con sólo un header que incluye:
+- Título "Examen IIC2513 2020-2" a la izquierda
+- Texto "Username" a la derecha
+- Botón con texto "Salir" a la derecha
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Listo! Ya estás de condiciones de correr una single-page application en el browser. En el examen tendrás que seguir pasos similares, pero con otro repositorio.
