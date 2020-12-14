@@ -9,7 +9,7 @@ Este proyecto fue construido con la herramienta [Create React App](https://creat
 ## Setup proyecto
 
 * Clonar repositorio
-* `cd examen-frontend-rehearsal`
+* `cd examen-frontend`
 * (Opcional) Si usan `nvm`, cambiar a versión válida para el proyecto
   * `nvm use`
 * Instalar dependencias:
