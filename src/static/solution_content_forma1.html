@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../App.css" />
+    <title>Content Examen</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="brand">
+          <img src="../assets/solar-eclipse.jpg" />
+          <h1>Examen IIC2513 2020-2</h1>
+        </div>
+        <ul>
+          <li>Username</li>
+          <li><button>Salir</button></li>
+        </ul>
+      </header>
+      <!-- Your code here -->
+      <main class="content">
+        <section>
+          <h1>Pronóstico tiempo</h1>
+          <section>
+            <h2>Región de la Araucanía</h2>
+            <div class="district">
+              <h3>Puerto Saavedra</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Día</th>
+                    <th>Pronóstico</th>
+                    <th>Mínima</th>
+                    <th>Máxima</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10-12-2020</td>
+                    <td>Despejado</td>
+                    <td>10</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>11-12-2020</td>
+                    <td>Nublado</td>
+                    <td>8</td>
+                    <td>18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="district">
+              <h3>Pucón</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Día</th>
+                    <th>Pronóstico</th>
+                    <th>Mínima</th>
+                    <th>Máxima</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10-12-2020</td>
+                    <td>Despejado</td>
+                    <td>10</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>11-12-2020</td>
+                    <td>Nublado</td>
+                    <td>8</td>
+                    <td>18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="district">
+              <h3>Curarrehue</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Día</th>
+                    <th>Pronóstico</th>
+                    <th>Mínima</th>
+                    <th>Máxima</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10-12-2020</td>
+                    <td>Despejado</td>
+                    <td>10</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>11-12-2020</td>
+                    <td>Nublado</td>
+                    <td>8</td>
+                    <td>18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section>
+            <h2>Región de Los Ríos</h2>
+            <div class="district">
+              <h3>Panguipulli</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Día</th>
+                    <th>Pronóstico</th>
+                    <th>Mínima</th>
+                    <th>Máxima</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10-12-2020</td>
+                    <td>Despejado</td>
+                    <td>10</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>11-12-2020</td>
+                    <td>Nublado</td>
+                    <td>8</td>
+                    <td>18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+        <section class="form-container">
+          <h2>Agregar pronóstico</h2>
+          <form>
+            <div class="field">
+              <label for="district">Comuna</label>
+              <select id="district" name="districtId">
+                <option value="1">Puerto Saavedra</option>
+                <option value="2">Pucón</option>
+                <option value="3">Curarrehue</option>
+                <option value="4">Panguipulli</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Fecha (día)</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="field">
+              <label for="forecast">Pronóstico</label>
+              <select id="forecast" name="forecast">
+                <option value="Despejado">Despejado</option>
+                <option value="Parcial">Parcial</option>
+                <option value="Nublado">Nublado</option>
+                <option value="Lluvia">Lluvia</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="min">Mínima (ºC)</label>
+              <input type="number" id="min" name="min" min="0" max="100" />
+            </div>
+            <div class="field">
+              <label for="max">Máxima (ºC)</label>
+              <input type="number" id="max" name="max" min="0" max="100" />
+            </div>
+            <div class="actions">
+              <button>Agregar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>    
+  </body>
+</html>

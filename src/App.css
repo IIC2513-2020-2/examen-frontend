@@ -58,22 +58,27 @@
   box-sizing: border-box;
 }
 
-.login-container .field, .login-container .actions {
+.field, .actions {
   padding: 10px 0;
 }
 
-.login-container .field input {
+.field input, .field select {
   width: 100%;
   margin-top: 10px;
   line-height: 2;
+  box-sizing: border-box;
 }
 
-.login-container .actions {
+.field select {
+  padding: 10px 0;
+}
+
+.actions {
   text-align: center;
   padding-top: 30px;
 }
 
-.login-container .actions button {
+.actions button {
   padding: 5px 20px;
   font-size: 1rem;
   border-radius: 0.25rem;
@@ -84,6 +89,52 @@
   line-height: 1.5;
   cursor: pointer;
   text-decoration: none;
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+}
+
+main.content h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px 0;
+}
+
+main.content h2 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+main.content > section {
+  padding: 20px;
+}
+
+main.content .form-container {
+  order: -1;
+}
+
+main.content .form-container .actions {
+  text-align: right;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+table th, table td {
+  border: 1px solid #444;
+  padding: 0.75rem;
+}
+
+table th {
+  text-align: left;
+}
+
+.district {
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 501px) {
@@ -101,6 +152,20 @@
 
   .login-container {
     width: 80%;
+  }
+
+  main.content {
+    flex-direction: row;
+  }
+
+  main.content > section {
+    width: 50%;
+    padding: 20px 40px;
+  }
+
+  main.content .form-container {
+    order: 0;
+    padding: 98px 40px 20px;
   }
 }
 
