@@ -91,6 +91,11 @@
   text-decoration: none;
 }
 
+.actions button:disabled {
+  background-color: #CCC;
+  cursor: auto;
+}
+
 main.content {
   display: flex;
   flex-direction: column;
