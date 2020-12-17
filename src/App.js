@@ -1,20 +1,19 @@
-import './App.css';
-import logo from './assets/solar-eclipse.jpg'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import FormasBase from './components/FormasBase';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="app">
-      <header className="app-header">
-        <div className="brand">
-          <img src={logo} />
-          <h1>Examen IIC2513 2020-2</h1>
-        </div>
-        <ul>
-          <li>Username</li>
-          <li><button>Salir</button></li>
-        </ul>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/formas/:number" component={FormasBase} />
+        <Route path="/" component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
