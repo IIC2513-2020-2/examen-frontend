@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../App.css" />
+    <title>Content Examen</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="brand">
+          <img src="../assets/solar-eclipse.jpg" />
+          <h1>Examen IIC2513 2020-2</h1>
+        </div>
+        <ul>
+          <li>Username</li>
+          <li><button>Salir</button></li>
+        </ul>
+      </header>
+      <!-- Your code here -->
+      <main class="content">
+        <section>
+          <h1>Cantidad de personas</h1>
+          <section>
+            <h2>Región de la Araucanía</h2>
+            <div class="district">
+              <h3>Puerto Saavedra</h3>
+              <ul>
+                <li>14/12: 100000</li>
+                <li>13/12: 50000</li>
+                <li>12/12: 20000</li>
+                <li>11/12: 12000</li>
+                <li>10/12: 10000</li>
+                <li>09/12: 7500</li>
+                <li>08/12: 2300</li>
+              </ul>
+            </div>
+            <div class="district">
+              <h3>Pucón</h3>
+              <ul>
+                <li>14/12: 100000</li>
+                <li>13/12: 50000</li>
+                <li>12/12: 20000</li>
+                <li>11/12: 12000</li>
+                <li>10/12: 10000</li>
+                <li>09/12: 7500</li>
+                <li>08/12: 2300</li>
+              </ul>
+            </div>
+            <div class="district">
+              <h3>Curarrehue</h3>
+              <ul>
+                <li>14/12: 100000</li>
+                <li>13/12: 50000</li>
+                <li>12/12: 20000</li>
+                <li>11/12: 12000</li>
+                <li>10/12: 10000</li>
+                <li>09/12: 7500</li>
+                <li>08/12: 2300</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>Región de Los Ríos</h2>
+            <div class="district">
+              <h3>Panguipulli</h3>
+              <ul>
+                <li>14/12: 100000</li>
+                <li>13/12: 50000</li>
+                <li>12/12: 20000</li>
+                <li>11/12: 12000</li>
+                <li>10/12: 10000</li>
+                <li>09/12: 7500</li>
+                <li>08/12: 2300</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section class="form-container">
+          <h2>Ingresar cantidad</h2>
+          <form>
+            <div class="field">
+              <label for="district">Comuna</label>
+              <select id="district" name="districtId">
+                <option value="1">Puerto Saavedra</option>
+                <option value="2">Pucón</option>
+                <option value="3">Curarrehue</option>
+                <option value="4">Panguipulli</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Fecha (día)</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="field">
+              <label for="quantity">Cantidad de personas</label>
+              <input type="number" id="quantity" name="quantity" min="1" />
+            </div>
+            <div class="actions">
+              <button>Ingresar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>    
+  </body>
+</html>

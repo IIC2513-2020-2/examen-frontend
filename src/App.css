@@ -138,6 +138,10 @@ table th {
   text-align: left;
 }
 
+main.content ul {
+  columns: 2;
+}
+
 .district {
   padding-bottom: 30px;
 }
