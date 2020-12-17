@@ -137,6 +137,12 @@ table th {
   padding-bottom: 30px;
 }
 
+.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 20px;
+}
+
 @media screen and (min-width: 501px) {
   .app-header h1 {
     font-size: 1.2rem;
