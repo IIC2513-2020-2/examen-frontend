@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../App.css" />
+    <title>Content Examen</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="brand">
+          <img src="../assets/solar-eclipse.jpg" />
+          <h1>Examen IIC2513 2020-2</h1>
+        </div>
+        <ul>
+          <li>Username</li>
+          <li><button>Salir</button></li>
+        </ul>
+      </header>
+      <!-- Your code here -->
+      <main class="content">
+        <section>
+          <h1>Información eclipse</h1>
+          <section>
+            <h2>Región de la Araucanía</h2>
+            <div class="district">
+              <h3>Puerto Saavedra</h3>
+              <ul>
+                <li>Inicio eclipse: 11:24</li>
+                <li>Inicio totalidad: 13:00:02</li>
+                <li>Fin eclipse: 14:28</li>
+                <li>Duración: 1 minuto 2 seg</li>
+                <li>Altura sol: 71.7º</li>
+              </ul>
+            </div>
+            <div class="district">
+              <h3>Pucón</h3>
+              <ul>
+                <li>Inicio eclipse: 11:23</li>
+                <li>Inicio totalidad: 13:03:20</li>
+                <li>Fin eclipse: 14:32</li>
+                <li>Duración: 2 minutos 8 seg</li>
+                <li>Altura sol: 72.0º</li>
+              </ul>
+            </div>
+            <div class="district">
+              <h3>Curarrehue</h3>
+              <ul>
+                <li>Inicio eclipse: 11:24</li>
+                <li>Inicio totalidad: 13:04:13</li>
+                <li>Fin eclipse: 14:32</li>
+                <li>Duración: 2 minutos 7 seg</li>
+                <li>Altura sol: 72.2º</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>Región de Los Ríos</h2>
+            <div class="district">
+              <h3>Panguipulli</h3>
+              <ul>
+                <li>Inicio eclipse: 11:23</li>
+                <li>Inicio totalidad: 13:03:42</li>
+                <li>Fin eclipse: 14:31</li>
+                <li>Duración: 41 seg</li>
+                <li>Altura sol: 71.5º</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section class="form-container">
+          <h2>Actualizar información</h2>
+          <form>
+            <div class="field">
+              <label for="district">Comuna</label>
+              <select id="district" name="districtId">
+                <option value="1">Puerto Saavedra</option>
+                <option value="2">Pucón</option>
+                <option value="3">Curarrehue</option>
+                <option value="4">Panguipulli</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="startTime">Hora inicio eclipse</label>
+              <input type="text" id="startTime" name="startTime" value="11:24" />
+            </div>
+            <div class="field">
+              <label for="totalityTime">Hora totalidad eclipse</label>
+              <input type="text" id="totalityTime" name="totalityTime" value="13:00:02" />
+            </div>
+            <div class="field">
+              <label for="endTime">Hora fin eclipse</label>
+              <input type="text" id="endTime" name="endTime" value="14:28" />
+            </div>
+            <div class="field">
+              <label for="duration">Duración totalidad (segundos)</label>
+              <input type="number" id="duration" name="duration" min="1" max="130" value="62" />
+            </div>
+            <div class="field">
+              <label for="altitude">Altura del sol en totalidad (grados)</label>
+              <input type="text" id="altitude" name="altitude" value="71.7" />
+            </div>
+            <div class="actions">
+              <button>Actualizar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>    
+  </body>
+</html>
