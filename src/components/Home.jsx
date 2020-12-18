@@ -13,6 +13,9 @@ function Home() {
               <Link to="/formas/1">Forma 1</Link>
             </li>
             <li>
+              <Link to="/formas/2">Forma 2</Link>
+            </li>
+            <li>
               <Link to="/formas/original">Original (lo entregado para resolver el examen)</Link>
             </li>
           </ul>
