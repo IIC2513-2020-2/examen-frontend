@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import Forma1 from './Forma1';
 import Forma2 from './Forma2';
+import Forma3 from './Forma3';
 import Original from './Original';
 
 function InvalidForma() {
@@ -25,6 +26,9 @@ function getForma(number) {
       break;
     case "2":
       component = Forma2;
+      break;
+    case "3":
+      component = Forma3;
       break;
     default:
       component = InvalidForma;
